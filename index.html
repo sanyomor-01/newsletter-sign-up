@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michael | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Newsletter sign-up form with success message | Michael</title>
 
 </head>
 <body>
@@ -12,23 +13,20 @@
       <section class="details">
         <h1 class="title">Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
+
         <ul class="list">
-          <li class="list-items">
-            <img src="./assets/images/icon-list.svg" alt="list">
-            <span>Product discovery and building what matters</span>
-          </li>
-          <li class="list-items">
-            <img src="./assets/images/icon-list.svg" alt="list">
-            <span>  Measuring to ensure updates are a success</span>
-          </li>
-          <li class="list-items">
-            <img src="./assets/images/icon-list.svg" alt="list">
-            <span>And much more!</span>
-          </li>
+          <li class="list-items">Product discovery and building what matters</li>
+          <li class="list-items">Measuring to ensure updates are a success</li>
+          <li class="list-items"> And much more!</li>
         </ul>
+
+        <!-- form -->
         <form>
           <div class="form-control">
-            <label for="email">Email address</label>
+            <div class="label-error">
+              <label for="email">Email address</label>
+              <span class="error"></span>
+            </div>
             <input 
             type="email" 
             placeholder="email@company.com"
@@ -39,6 +37,7 @@
           <button type="submit">  Subscribe to monthly newsletter</button>
         </form>
       </section>
+
       <section class="images">
         <picture class="picture-container">
           <source
