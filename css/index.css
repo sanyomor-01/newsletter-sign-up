@@ -7,15 +7,14 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
+
+    --define-time: 0.3s
 };
 
 html {
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
 }
-
-
-
 
 
 *, *::before, *::after {
@@ -30,7 +29,6 @@ html {
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-
 
     background-color: var(--dark-slate-grey);
     width: 100vw;
@@ -49,6 +47,7 @@ html {
     background-color: var(--white);
     border-radius: 1em;
     padding: 1.5rem;
+    place-items:center ;
 }
 
 .details {
@@ -58,10 +57,12 @@ html {
     align-items:flex-start;
     padding-inline: 2.5rem;
     padding-block: 2rem;
-
-
-    
+ 
 }
+p, h1 {
+    overflow-wrap: break-word;
+  }
+
 h1{
     font-family: 'Roboto';
     font-size: 2.5rem;
@@ -131,6 +132,9 @@ input{
 }
 input:is(:hover, :focus){
     border-color: var(--dark-slate-grey);
+    transition-property: border-color;
+    transition-duration: var(--define-time);
+    transition-timing-function: ease-out;
 }
 button{
     height: 48px;
@@ -140,19 +144,26 @@ button{
     color: var(--white);
     cursor: pointer;
 
-
-
 }
 
 
 button:hover{
     background:linear-gradient(160deg, #FF5478, #ff6257 );
- 
     box-shadow: 2px 1px 16px #ff6257;
+    transition-property: box-shadow, background;
+    transition-duration: var(--define-time);
+    transition-timing-function: ease-out;
 }
-  p, h1 {
-    overflow-wrap: break-word;
-  }
+
+.picture-container img:hover{
+    border-radius: 1rem;
+    background-color: #ff6257;
+    scale: 1.05;
+    transition-property: scale;
+    box-shadow: 1px 1px 10px var(--tomato);
+    transition-duration: var(--define-time);
+    transition-timing-function: ease-out;
+}
 
   #root, #__next {
     isolation: isolate;
