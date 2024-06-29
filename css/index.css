@@ -146,7 +146,6 @@ button{
 
 }
 
-
 button:hover{
     background:linear-gradient(160deg, #FF5478, #ff6257 );
     box-shadow: 2px 1px 16px #ff6257;
