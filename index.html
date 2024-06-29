@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/index.css">
   <title>Newsletter sign-up form with success message | Michael</title>
+  <script defer type="module" src="app.js"></script>
 
 </head>
 <body>
   <main>
-    <div class="container">
+    <div class="container " id="sign-up">
       <section class="details">
         <h1 class="title">Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -21,7 +22,7 @@
         </ul>
 
         <!-- form -->
-        <form>
+        <form id="form" >
           <div class="form-control">
             <div class="label-error">
               <label for="email">Email address</label>
@@ -41,22 +42,21 @@
       <section class="images">
         <picture class="picture-container">
           <source
-          media="(min-width: 300px)"
            srcset="./assets/images/illustration-sign-up-desktop.svg"/>
            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
         </picture>
       </section>
     </div>
 
-    <section class="wrapper">
-      <div class="image-div">
+    <section class="wrapper active " id="success" >
+      <div class="icon">
           <img src="./assets/images/icon-list.svg" alt="list">
       </div>
-      <h1>Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to ash@loremcompany.com. 
-          Please open it and click the button inside to confirm your subscription.
+      <h1 class="success-title" >Thanks for subscribing!</h1>
+      <p class="thank-u-message">A confirmation email has been sent to <strong id="submitted-email"></strong> 
+        Please open it and click the button inside to confirm your subscription.
       </p>
-      <button class="dismiss">Dismiss message</button>
+      <button id ="dismiss" type="submit" >Dismiss message</button>
   </section>
   </main>
 
