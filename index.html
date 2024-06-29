@@ -10,12 +10,15 @@
 </head>
 <body>
   <main>
-    <div class="container " id="sign-up">
-      <section class="details">
-        <h1 class="title">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+    <div class="wrapper " id="sign-up">
+      <section class="content">
 
-        <ul class="list">
+        <div class="info">
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+
+        <ul role="list">
           <li class="list-items">Product discovery and building what matters</li>
           <li class="list-items">Measuring to ensure updates are a success</li>
           <li class="list-items"> And much more!</li>
@@ -35,28 +38,31 @@
             id="email"
             >
           </div>
-          <button type="submit">  Subscribe to monthly newsletter</button>
+          <button class="btn" type="submit">  Subscribe to monthly newsletter</button>
         </form>
       </section>
 
       <section class="images">
-        <picture class="picture-container">
-          <source
-           srcset="./assets/images/illustration-sign-up-desktop.svg"/>
-           <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-        </picture>
+        <img class="desktop--image"
+        src="./assets/images/illustration-sign-up-desktop.svg"
+        alt="graphs and stats"/>
+
+        <img class="mobile--image"
+        src="./assets/images/illustration-sign-up-mobile.svg" 
+        alt="graphs and stats"/>
       </section>
     </div>
 
     <section class="wrapper active " id="success" >
-      <div class="icon">
+      <div class="content">
           <img src="./assets/images/icon-list.svg" alt="list">
-      </div>
-      <h1 class="success-title" >Thanks for subscribing!</h1>
-      <p class="thank-u-message">A confirmation email has been sent to <strong id="submitted-email"></strong> 
-        Please open it and click the button inside to confirm your subscription.
-      </p>
-      <button id ="dismiss" type="submit" >Dismiss message</button>
+      
+          <h1 class="success-title" >Thanks for subscribing!</h1>
+          <p class="thank-u-message">A confirmation email has been sent to <strong id="submitted-email"></strong> 
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+          <button class="btn" id ="dismiss" type="submit" >Dismiss message</button>
+        </div>
   </section>
   </main>
 

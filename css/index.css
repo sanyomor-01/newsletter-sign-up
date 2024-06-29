@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 :root{
   /* color*/
@@ -9,9 +11,9 @@
     --white: hsl(0, 0%, 100%);
 
     /* font-sizes*/
-    --fs-200: 0.9rem;
+    --fs-200: 0.8rem;
     --fs-400: 1rem;
-    --fs-700: 1.5rem;
+    --fs-700: 1.6rem;
 
     /*border radius*/
     --rounded-sm: 0.5rem;
@@ -35,6 +37,11 @@
     margin: 0;
   }
 
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
 p, h1 {
     overflow-wrap: break-word;
   }
@@ -49,25 +56,87 @@ p, h1 {
   }
 
   body {
-    line-height: 1.5;
+    line-height: 1.4;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Robot';
+    font-family: 'Roboto',sans-serif;
     background-color: var(--dark-slate-grey);
   }
-.container, .wrapper{
+
+.wrapper{
   background-color: var(--white);
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
+.content{
+  display: grid;
+  gap: var(--space-md);
+  padding-inline: var(--space-md);
+  padding-block-start: var(--space-lg);
+}
+
+/* fonts styles*/
+.title{
+  font-size: var(--fs-700);
+  font-weight: bold;
+  color: var(--dark-slate-grey);
+  line-height: 1.1;
+}
+p{
+  max-width: 60ch;
+}
+p{
+  font-size: var(--fs-400);
+  color: var(--charcoal-grey);
+  font-weight: 300;
+
+}
+
+
+/* util*/
   ul li::before{
     content: url("../assets/images/icon-list.svg");
-    width: 18px;
-    height: 18px;
+    width: 12px;
+    height: 12px;
 
 }
-
-.active{
-  display:;
+ul {
+  display: grid;
+  gap: var(--space-sm);
 }
-@media only screen and (max-witdth: 501px) {
-  
-  
+li{
+  font-size: var(--fs-400);
+color: var(--charcoal-grey);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  margin-left: -40px;
+}
+form{
+  display:grid;
+  gap:var(--space-md);
+  border: 1px solid ;
+}
+
+label{
+  font-size:var(--fs-200);
+}
+input{
+  height: 48px;
+  width: 100%;
+}
+
+.btn{
+  height: 48px;
+  width: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .desktop--image{
+    display: none;
+  }
+
+}
+@media only screen and (min-width: 701px) {
+  .mobile--image{
+    display: none;
+  }
 }
