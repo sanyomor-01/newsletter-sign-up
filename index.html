@@ -10,13 +10,10 @@
 </head>
 <body>
   <main>
-    <div class="wrapper " id="sign-up">
+    <div class="wrapper container" id="sign-up">
       <section class="content">
-
-        <div class="info">
-          <h1 class="title">Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        </div>
+        <h1 class="title">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
         <ul role="list">
           <li class="list-items">Product discovery and building what matters</li>
@@ -25,18 +22,13 @@
         </ul>
 
         <!-- form -->
-        <form id="form" >
-          <div class="form-control">
-            <div class="label-error">
-              <label for="email">Email address</label>
-              <span class="error"></span>
+        <form id="form"  class="grid--md">
+          <div class=" grid--sm">
+            <div class="flex-between items--center">
+              <label for="email" ><small> Email address </small></label>
+              <span class="error active "> <small>valid email required </ </span>
             </div>
-            <input 
-            type="email" 
-            placeholder="email@company.com"
-            name="email"
-            id="email"
-            >
+            <input type="email" placeholder="email@company.com" name="email" id="email" required>
           </div>
           <button class="btn" type="submit">  Subscribe to monthly newsletter</button>
         </form>
@@ -53,9 +45,9 @@
       </section>
     </div>
 
-    <section class="wrapper active " id="success" >
+    <section class=" wrapper-narrow active  success" id="success" >
       <div class="content">
-          <img src="./assets/images/icon-list.svg" alt="list">
+          <img class="success-img" src="./assets/images/icon-list.svg" alt="list">
       
           <h1 class="success-title" >Thanks for subscribing!</h1>
           <p class="thank-u-message">A confirmation email has been sent to <strong id="submitted-email"></strong> 
