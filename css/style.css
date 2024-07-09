@@ -1,0 +1,8 @@
+.hidden {
+    display: none;
+}
+
+.error-state{
+    background-color: rgb(250, 160, 160);
+    color: red;
+}
