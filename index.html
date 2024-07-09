@@ -10,36 +10,36 @@
 <body>
   <main>
       <div class="container">
-        <picture>
-          <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
-          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="background image">
-        </picture>
-
-        <section class="content">
-          <h1 class="title">Stay Updated!</h1>
-          <p>Join 60,000+ product managers recieving monthly updates on:</p>
-          <ul>
-            <li>Product discovery and building what matters</li>
-            <li>Measuring to ensure updates are on a success</li>
-            <li>And much more</li>
-          </ul>
-
-          <form id="form">
-            <div class="form-control">
-              <div>
-                <label for="email">Email address</label>
-                <p class="error"></p>
+        <div class="card">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="background image">
+          </picture>
+          <section class="content ">
+            <h1 class="title">Stay Updated!</h1>
+            <p>Join 60,000+ product managers recieving monthly updates on:</p>
+            <ul>
+              <li>Product discovery and building what matters</li>
+              <li>Measuring to ensure updates are on a success</li>
+              <li>And much more</li>
+            </ul>
+            <form id="form">
+              <div class="form-control">
+                <div>
+                  <label for="email">Email address</label>
+                  <span class="error"></span>
+                </div>
+                <input type="email" placeholder="email@company.company">
               </div>
-              <input type="email" placeholder="email@company.company">
-            </div>
-            <button type=" submit">Subsribe to monthly newsletter</button>
-          </form>
-        </section>
+              <button type=" submit">Subsribe to monthly newsletter</button>
+            </form>
+          </section>
+        </div>
         <section class="success hidden">
           <img src="./assets/images/icon-success.svg" alt="success">
           <h1 class="header">Thanks for subscribing!</h1>
-          <p class="msg">A confirmation email has been sent to <strong class="user-email">ash@loremcompany.com</strong> Please open it and click the button inside to confirm you subscribtion</p>
-          <button class="btn" type="submit">Dismiss message</button>
+          <p class="msg">A confirmation email has been sent to <strong><span class="user--email"><</span></strong> Please open it and click the button inside to confirm you subscribtion</p>
+          <button class="dismiss-btn" type="submit">Dismiss message</button>
         </section>
       </div>
   </main>

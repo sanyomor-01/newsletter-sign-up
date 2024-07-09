@@ -1,8 +1,10 @@
 const Form = document.querySelector('#form')
 const input = document.querySelector('input')
 const ErrorMsg = document.querySelector('.error')
-const userEmail = document.querySelector('.user-email')
+const userEmail = document.querySelector('.user--email')
 const Success = document.querySelector('.success')
+const dismissBtn = document.querySelector('.dismiss-btn')
+const mainPage = document.querySelector('.card')
 
 
 
@@ -15,21 +17,23 @@ function isValidEmail(str) {
 /* Prevent default browser behavior*/
 Form.addEventListener('submit', (e) => {
      e.preventDefault()
-    
     const email = input.value
-    if(!isValidEmail(email)) {
+
+    if(email === '' || !isValidEmail(email)) {
             ErrorMsg.textContent = 'Valid email required'
             input.classList.add('error-state')
         }
 
-    
-    if(isValidEmail(email)) {
-        input.value = ''
+    else{
         userEmail.textContent = `${input.value}`
+        mainPage.style.display = `none`
         Success.classList.toggle('hidden')
-
-        /// . the success message should show
-        //email of user should be update in the success message
-        //email in the input should reset to nothing
     }
+})
+//dismiss button functionality
+dismissBtn.addEventListener('click', () => {
+    Success.style.display = `none`
+    input.value = ''
+    mainPage.style.display = `block`
+
 })
