@@ -10,42 +10,43 @@
 </head>
 <body>
   <main>
-    <div class="wrapper container" id="sign-up">
-      <section class="content">
-        <h1 class="title">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-        <ul role="list">
-          <li class="list-items">Product discovery and building what matters</li>
-          <li class="list-items">Measuring to ensure updates are a success</li>
-          <li class="list-items"> And much more!</li>
-        </ul>
-
-        <!-- form -->
-        <form id="form"  class="grid--md">
-          <div class=" grid--sm">
-            <div class="flex-between items--center">
-              <label for="email" ><small> Email address </small></label>
-              <span class="error active "> <small>valid email required </ </span>
+    <div class="wrapper" id="sign-up">
+      <div class="container">
+        <section class="content">
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul role="list">
+            <li class="list-items">Product discovery and building what matters</li>
+            <li class="list-items">Measuring to ensure updates are a success</li>
+            <li class="list-items"> And much more!</li>
+          </ul>
+          <!-- form -->
+          <form id="form"  class="grid--md">
+            <div class=" grid--sm">
+              <div class="flex-between items--center">
+                <label for="email" ><small> Email address </small></label>
+                <span class="error-msg hidden"> <small>valid email required </small> </span>
+              </div>
+              <input  type="email" placeholder="email@company.com" name="email" id="email" required>
             </div>
-            <input type="email" placeholder="email@company.com" name="email" id="email" required>
-          </div>
-          <button class="btn" type="submit">  Subscribe to monthly newsletter</button>
-        </form>
-      </section>
+            <button class="btn" type="submit">  Subscribe to monthly newsletter</button>
+          </form>
+        </section>
 
-      <section class="images">
-        <img class="desktop--image"
+        <img  class="image desktop--image"
         src="./assets/images/illustration-sign-up-desktop.svg"
         alt="graphs and stats"/>
-
-        <img class="mobile--image"
-        src="./assets/images/illustration-sign-up-mobile.svg" 
+        <img class=" image mobile--image"
+        src="./assets/images/illustration-sign-up-mobile.svg"
         alt="graphs and stats"/>
-      </section>
-    </div>
 
-    <section class=" wrapper-narrow active  success" id="success" >
+      </div>
+      
+
+
+  
+
+    <section class=" wrapper active  success" id="success" >
       <div class="content">
           <img class="success-img" src="./assets/images/icon-list.svg" alt="list">
       
