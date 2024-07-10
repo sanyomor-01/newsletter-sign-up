@@ -12,10 +12,9 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Author](#Michael)
 
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-
+A news letter signup form with success page. Made with HTML, CSS and JS
 ### The challenge
 
 Users should be able to:
