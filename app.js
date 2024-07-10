@@ -1,9 +1,9 @@
 const Form = document.querySelector('#form')
 const input = document.querySelector('input')
-const ErrorMsg = document.querySelector('.error')
-const userEmail = document.querySelector('.user--email')
-const Success = document.querySelector('.success-state')
-const dismissBtn = document.querySelector('.dismiss-btn')
+const ErrorMsg = document.querySelector('.error-message')
+const userEmail = document.querySelector('#email')
+const Success = document.querySelector('#success')
+const dismissBtn = document.querySelector('#dismiss')
 const mainPage = document.querySelector('.container')
 
 

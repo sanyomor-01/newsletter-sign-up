@@ -129,7 +129,7 @@ button {
   }
   
   .error-message {
-    color: hsl(var(--accent));
+    color: var(--tomato);
   }
   
 
