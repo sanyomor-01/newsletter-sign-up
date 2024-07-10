@@ -2,9 +2,9 @@ const Form = document.querySelector('#form')
 const input = document.querySelector('input')
 const ErrorMsg = document.querySelector('.error')
 const userEmail = document.querySelector('.user--email')
-const Success = document.querySelector('.success')
+const Success = document.querySelector('.success-state')
 const dismissBtn = document.querySelector('.dismiss-btn')
-const mainPage = document.querySelector('.card')
+const mainPage = document.querySelector('.container')
 
 
 
